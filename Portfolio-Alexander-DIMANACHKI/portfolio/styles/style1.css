@@ -1,0 +1,174 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other elements */
+    text-align: center;
+    background-color: #000000;
+}
+body {
+    padding-top: 60px; /* to match the height of the navbar */
+}
+
+nav a{
+    font-family: "proxima-nova","Helvetica",arial,sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color:#b3b3b3;
+}
+
+nav a:hover{   
+    color: #fff;
+    font-family: "proxima-nova","Helvetica",arial,sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav_item::after{
+    content: "";
+    position: absolute;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    top: 50%;
+    left: -2px;
+    transform: scaleX(0);
+    width: 100%;
+    height: 1px;
+    background-color: #ff671f;
+
+}
+.nav_item-active::after{
+    transform: scaleX(1);
+}
+.nav_item-active{
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .nav1{
+        justify-content: end;
+    }
+    .pic{
+        justify-content: start;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .nav1{
+        justify-content: center;
+    }
+    .pic{
+        justify-content: center;
+    }
+}
+.carousel{
+    background-color: #000000;
+}
+
+.photosad7 {
+    transition: all 0.5s ease;
+    display: flex;
+    height: 90vh; /* 80% of viewport height */
+    padding-left: 2px !important;
+    padding-right: 2px  !important;
+}
+/* Ensure images fill the entire column on hover */
+#photo1.col-lg-4 img,
+#photo2.col-lg-4 img,
+#photo3.col-lg-4 img,
+#photo4.col-lg-4 img,
+#photo5.col-lg-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio and covers the entire container */
+}
+
+@media (max-width: 992px) {
+    /* Hide images beside the first one on smaller screens */
+    #photo2,
+    #photo3,
+    #photo4,
+    #photo5 {
+        display: none;
+    }
+}
+#aboutme{
+    background-color: #000000;
+    padding-top: 60px;
+    font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#fff;
+}
+#main_info{
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#skills{
+    background-color: #000000;
+    padding-top: 60px;
+    font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+#h1skills{
+    padding-bottom: 60px;
+}
+#row1{
+    display:flex;
+    justify-content: center;
+}
+#row2{
+    display:flex;
+    justify-content: center;
+}
+#row3{
+    display:flex;
+    justify-content: center;
+}
+
+.footer{
+   
+    height: 72px;
+    background-color: #000000;
+    justify-content: center;
+    color: #b3b3b3;
+    font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+    font-size: 14px;
+} 
+#contact{
+    background-color: #000000;
+    padding-top: 60px;
+    font-family: "proxima-nova-condensed","Helvetica",arial,sans-serif;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#fff;
+}
+#row4{
+    padding-top: 60px;
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    
+}
